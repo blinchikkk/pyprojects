@@ -16,7 +16,7 @@ def calc(request1, request2, request3):
 		elif request3 in ['*', 'произведение', 'умножить', 'умножение']:
 			print(request1 * request2)
 		elif request3 in ['/', '//', 'деление']:
-			return request1 / request2
+			print(f'Результат: {request1 / request2}')
 		else:
 			pass
 
