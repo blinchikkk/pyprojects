@@ -1,23 +1,41 @@
+#//information://
+
+#//Version 0.2//
+#//git: https://github.com/blinchikkk/pyprojects/blob/main/calculator.py //
+#//vk: @blinchikvk//
+
 #//import//
 import time
 
 #//calc//
 
-request1 = float(input('Введите первое число: '))
-request2 = float(input('Введите второе число: '))
-request3 = input('Введите действие: ')
 
-def calc(request1, request2, request3):
+
+def calc():
+	request1 = float(input('Введите первое число: '))
+	request2 = float(input('Введите второе число: '))
+	request3 = input('Введите действие: ')
+
 	if request1 and request2 and request3 is not None:
+
 		if request3 in ['+', 'сумма', 'плюс']:
-			print(request1 + request2)
+			time.sleep(0.2)
+			print(f'Результат: {request1 + request2}')
+
 		elif request3 in ['-', 'вычетание', 'минус']:
-			print(request1 - request2)
+			time.sleep(0.2)
+			print(f'Результат: {request1 - request2}')
+
 		elif request3 in ['*', 'произведение', 'умножить', 'умножение']:
-			print(request1 * request2)
+			time.sleep(0.2)
+			print(f'Результат: {request1 * request2}')
+
 		elif request3 in ['/', '//', 'деление']:
-			print(f'Результат: {request1 / request2}')
+			time.sleep(0.2)
+			print(f'Результат: {request1 / request2}'),
+
 		else:
 			pass
+			
+calc()
 
-calc(request1, request2, request3)
