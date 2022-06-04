@@ -1,11 +1,14 @@
 #//information://
 
-#//Version 0.2//
+#//Version 0.3//
 #//git: https://github.com/blinchikkk/pyprojects/blob/main/calculator.py //
 #//vk: @blinchikvk//
 
 #//import//
 import time
+from colorama import init
+from colorama import Fore, Back, Style
+init()
 
 #//calc//
 
@@ -20,22 +23,22 @@ def calc():
 
 		if request3 in ['+', 'сумма', 'плюс']:
 			time.sleep(0.2)
-			print(f'Результат: {request1 + request2}')
+			print(f'Результат: {Fore.GREEN}{request1 + request2}')
 
 		elif request3 in ['-', 'вычетание', 'минус']:
 			time.sleep(0.2)
-			print(f'Результат: {request1 - request2}')
+			print(f'Результат: {Fore.GREEN}{request1 - request2}')
 
 		elif request3 in ['*', 'произведение', 'умножить', 'умножение']:
 			time.sleep(0.2)
-			print(f'Результат: {request1 * request2}')
+			print(f'Результат: {Fore.GREEN}{request1 * request2}')
 
 		elif request3 in ['/', '//', 'деление']:
 			time.sleep(0.2)
-			print(f'Результат: {request1 / request2}'),
+			print(f'Результат: {Fore.GREEN}{request1 / request2}')
 
 		else:
 			pass
-			
+
 calc()
 
